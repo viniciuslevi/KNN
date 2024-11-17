@@ -14,21 +14,23 @@ pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 
 1. Clone este repositório ou baixe os arquivos do projeto
 
-2. Instale as dependências:
+2. Instale, crie e entre num ambiente virtual:
+```bash
+python3 -m venv venv .
+. ./venv/bin/activate
+```
+3. Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
-
-3. Execute o Jupyter Notebook:
+4. Execute o Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
 
-4. Abra o arquivo 
+5. Abra o arquivo knn.ipynb no navegador
 
-knn.ipynb
-
- no navegador
+### Obs: Pode usar o vsCode se preferir, nesse caso instale a extenção Jupyter e configure o kernel para rodar com o python instalado no ambiente virtual (venv/bin/python).
 
 ## 📊 Sobre o Modelo
 
@@ -58,7 +60,7 @@ O modelo apresentou excelentes resultados após a normalização dos dados:
 
 ```
 .
-├── knn_regression.ipynb     # Notebook principal com o código do modelo
+├── knn.ipynb       # Notebook principal com o código do modelo
 ├── top_insta_influencers_data.csv    # Dataset
 ├── requirements.txt         # Dependências do projeto
 └── README.md               # Este arquivo
